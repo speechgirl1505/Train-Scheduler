@@ -1,6 +1,7 @@
 body {
     background-image: url(../images/train3.jpg);
     background-size: cover;
+    font-family: 'Grenze', serif;
 }
 
 .jumbotron, .card {
@@ -8,3 +9,13 @@ body {
     color:rgb(17, 4, 20);
 }
 
+.display-4 {
+    font-size: 70px;
+}
+
+.lead {
+    font-size: 32px;
+}
+.card {
+    font-size: 20px;
+}
