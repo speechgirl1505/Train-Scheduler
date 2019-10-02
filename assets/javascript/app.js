@@ -1,14 +1,15 @@
 $(document).ready(function () {
 
-const firebaseConfig = {
-    apiKey: "AIzaSyCuaymKmBnFLmk0A4Bci0U3MNHH_FxVrUE",
-    authDomain: "fir-project-2adfc.firebaseapp.com",
-    databaseURL: "https://fir-project-2adfc.firebaseio.com",
-    projectId: "fir-project-2adfc",
-    storageBucket: "",
-    messagingSenderId: "637065856827",
-    appId: "1:637065856827:web:f06c58585c35a16454191e"
-};
+    const firebaseConfig = {
+        apiKey: "AIzaSyC_NXp45q1_f_8YYVFGH2RNvevoUaiHqjw",
+        authDomain: "trainscheduler-7d1af.firebaseapp.com",
+        databaseURL: "https://trainscheduler-7d1af.firebaseio.com",
+        projectId: "trainscheduler-7d1af",
+        storageBucket: "",
+        messagingSenderId: "179437553427",
+        appId: "1:179437553427:web:9c3a1dd360226fabbebce6",
+        measurementId: "G-0XZ3KS52KD"
+      };
 
 firebase.initializeApp(firebaseConfig);
 
