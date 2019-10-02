@@ -1,3 +1,10 @@
-.jumbotron {
-    background-color:lavender;
+body {
+    background-image: url(../images/train3.jpg);
+    background-size: cover;
 }
+
+.jumbotron, .card {
+    opacity: .6;
+    color:rgb(17, 4, 20);
+}
+

@@ -37,21 +37,22 @@ $("#add-train-btn").on("click", function(event){
 
 // Firebase watcher .on("child_added"
 database.ref().on("child_added",function(snapshot) {
+ var currentTime =  moment()
   var sv = snapshot.val();
   var randomTime = (sv.firstTrainTime);
-  var randomFormat = "HH:mm";
+  console.log(randomTime);
+   if(currentTime < randomTime)
+{
+
+}  var randomFormat = "HH:mm";
   var convertedTime = moment(randomTime, randomFormat).subtract(1, "years");
 
-// console.log("CT: " + convertedTime)
-
-// console.log("TN: " + convertedTime.toNow());
-
-var currentTime =  moment()
+console.log("CT: " + convertedTime)
 
 // moment(currentTime).format("HH:mm")
 console.log("current: " + moment(currentTime).format("HH:mm"))
 
-var timeDiff = moment().diff(moment(convertedTime), "minutes")
+var timeDiff = moment().diff(convertedTime, "minutes")
 console.log("time diff: " + timeDiff)
 
 var remainder = timeDiff % sv.frequency
